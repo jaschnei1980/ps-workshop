@@ -1,0 +1,512 @@
+ _            _             _   
+| |_ __ _ ___| | _____ __ _| |_ 
+| __/ _` / __| |/ / __/ _` | __|
+| || (_| \__ \   < (_| (_| | |_ 
+ \__\__,_|___/_|\_\___\__,_|\__|
+                                
+
+
+version 0.9.36
+Not in terminal, reprint now using normal build-in print function.
+
+[WARN   ] : ---
+[WARN   ] : Linting detected issues in: /home/ec2-user/environment/ps-workshop/templates/workload.template.yaml
+[WARN   ] :     line 73 [2001] [Check if Parameters are Used] Parameter PrivateSubnet1ID not used.
+[WARN   ] :     line 76 [2001] [Check if Parameters are Used] Parameter PrivateSubnet2ID not used.
+[WARN   ] :     line 88 [2001] [Check if Parameters are Used] Parameter VPCCIDR not used.
+[WARN   ] : ---
+[WARN   ] : Linting detected issues in: /home/ec2-user/environment/ps-workshop/templates/main.template.yaml
+[WARN   ] :     line 118 [3005] [Check obsolete DependsOn configuration for Resources] Obsolete DependsOn on resource (VPCStack),
+                                                                             dependency already enforced by a "Fn:GetAtt" at Reso
+                                                                             urces/BastionStack/Properties/Parameters/PublicSubne
+                                                                             t1ID/Fn::GetAtt
+[WARN   ] :     line 118 [3005] [Check obsolete DependsOn configuration for Resources] Obsolete DependsOn on resource (VPCStack),
+                                                                             dependency already enforced by a "Fn:GetAtt" at Reso
+                                                                             urces/BastionStack/Properties/Parameters/PublicSubne
+                                                                             t2ID/Fn::GetAtt
+[WARN   ] :     line 118 [3005] [Check obsolete DependsOn configuration for Resources] Obsolete DependsOn on resource (VPCStack),
+                                                                             dependency already enforced by a "Fn:GetAtt" at Reso
+                                                                             urces/BastionStack/Properties/Parameters/VPCID/Fn::G
+                                                                             etAtt
+[WARN   ] :     line 151 [3005] [Check obsolete DependsOn configuration for Resources] Obsolete DependsOn on resource (VPCStack),
+                                                                             dependency already enforced by a "Fn:GetAtt" at Reso
+                                                                             urces/WorkloadStack/Properties/Parameters/PrivateSub
+                                                                             net1ID/Fn::GetAtt
+[WARN   ] :     line 151 [3005] [Check obsolete DependsOn configuration for Resources] Obsolete DependsOn on resource (VPCStack),
+                                                                             dependency already enforced by a "Fn:GetAtt" at Reso
+                                                                             urces/WorkloadStack/Properties/Parameters/PrivateSub
+                                                                             net2ID/Fn::GetAtt
+[WARN   ] :     line 151 [3005] [Check obsolete DependsOn configuration for Resources] Obsolete DependsOn on resource (VPCStack),
+                                                                             dependency already enforced by a "Fn:GetAtt" at Reso
+                                                                             urces/WorkloadStack/Properties/Parameters/PublicSubn
+                                                                             et1ID/Fn::GetAtt
+[WARN   ] :     line 151 [3005] [Check obsolete DependsOn configuration for Resources] Obsolete DependsOn on resource (VPCStack),
+                                                                             dependency already enforced by a "Fn:GetAtt" at Reso
+                                                                             urces/WorkloadStack/Properties/Parameters/PublicSubn
+                                                                             et2ID/Fn::GetAtt
+[WARN   ] :     line 151 [3005] [Check obsolete DependsOn configuration for Resources] Obsolete DependsOn on resource (VPCStack),
+                                                                             dependency already enforced by a "Fn:GetAtt" at Reso
+                                                                             urces/WorkloadStack/Properties/Parameters/VPCID/Fn::
+                                                                             GetAtt
+[WARN   ] :     line 151 [3005] [Check obsolete DependsOn configuration for Resources] Obsolete DependsOn on resource (VPCStack),
+                                                                             dependency already enforced by a "Fn:GetAtt" at Reso
+                                                                             urces/WorkloadStack/Properties/Parameters/VPCCIDR/Fn
+                                                                             ::GetAtt
+[S3: -> ] s3://tcat-22693e12ef7d5c4f953f51d1d46a95fe-us-west-1/ps-workshop/screen-logs.txt
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: CREATE_COMPLETE
+[INFO   ] : ┏ stack Ⓜ tCaT-default-7296ab
+[INFO   ] : ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+[INFO   ] : ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+[INFO   ] : ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+[INFO   ] : ┣ region: us-west-1
+[INFO   ] : ┗ status: CREATE_COMPLETE 
+[INFO   ] : Reporting on arn:aws:cloudformation:us-west-1:783192115006:stack/tCaT-default-7296ab/4aa7fe20-b888-11ed-8fd5-0698489c4271
+[INFO   ] : Deleting stack: arn:aws:cloudformation:us-west-1:783192115006:stack/tCaT-default-7296ab/4aa7fe20-b888-11ed-8fd5-0698489c4271
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+         ┣ stack Ⓝ tCaT-default-7296ab-VPCStack-13CMZR80MU4GF
+         ┣ stack Ⓝ tCaT-default-7296ab-WorkloadStack-L47YLEM1ABVD
+         ┣ stack Ⓝ tCaT-default-7296ab-BastionStack-E7EJDDU3PG5D
+         ┣ region: us-west-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-7296ab
+[ERROR  ] : ClientError An error occurred (ExpiredToken) when calling the DescribeStacks operation: The security token included in the request is expired

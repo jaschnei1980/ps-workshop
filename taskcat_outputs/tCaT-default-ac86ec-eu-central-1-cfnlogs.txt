@@ -1,0 +1,19 @@
+-----------------------------------------------------------------------------
+Region: eu-central-1
+StackName: tCaT-default-ac86ec
+*****************************************************************************
+ResourceStatusReason:  
+Parameter validation failed: parameter value YOUR-KEYPAIR-HERE for parameter name
+KeyPairName does not exist
+*****************************************************************************
+*****************************************************************************
+Events:  
+TimeStamp                         ResourceStatus      ResourceType                LogicalResourceId    ResourceStatusReason
+--------------------------------  ------------------  --------------------------  -------------------  ------------------------------------------------------------------------------------------------------------
+2023-03-01 22:57:57.256000+00:00  CREATE_FAILED       AWS::CloudFormation::Stack  tCaT-default-ac86ec  Parameter validation failed: parameter value YOUR-KEYPAIR-HERE for parameter name KeyPairName does not exist
+2023-03-01 22:57:54.630000+00:00  CREATE_IN_PROGRESS  AWS::CloudFormation::Stack  tCaT-default-ac86ec  User Initiated
+*****************************************************************************
+-----------------------------------------------------------------------------
+Tested on: Wednesday, 01. March 2023 10:59PM
+-----------------------------------------------------------------------------
+
